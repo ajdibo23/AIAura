@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AIAura</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AIAura is a series of pictures of which I have taken and edited and edited using AI/Photoshop.">
+    <meta name="keywords" content="AIAura, AI, Photoshop, Photograph, Picture, Art, AJ Dibo, AJDibo23">
+    <meta name="author" content="AJ Dibo">
+    <meta property="og:title" content="AIAura">
+    <meta property="og:description"
+        content="AIAura is a series of pictures of which I have taken and edited and edited using AI/Photoshop.">
+    <meta property="og:image" content="https://ai.ajdev.pro/website.png">
+    <meta property="og:url" content="https://ai.ajdev.pro">
+    <meta name="twitter:title" content="AIAura">
+    <meta name="twitter:description"
+        content="AIAura is a series of pictures of which I have taken and edited and edited using AI/Photoshop.">
+    <meta name="twitter:image" content="https://ai.ajdev.pro/website.png">
+    <meta name="twitter:url" content="https://ai.ajdev.pro">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#000000">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="web">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="https://ajdev.pro">Home</a></li>
+                <li><a href="https://youtube.com/@internet_aj">YouTube</a></li>
+                <li><a href="https://github.com/ajdibo23">GitHub</a></li>
+                <li><a href="https://www.instagram.com/ajdibo23">Instagram</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div>
+            <img class="image"
+                src="https://lh3.googleusercontent.com/pw/ADCreHe_gx5sjmpn-1nFtbeHk4otnomDd5C0F1DjPTOflMZ0ST82GNEz3G4Lk0CASmQ8M8SgsPqvJTrqBmqZ8BTHaS55xuCRBm5E6JdmPWauP66YC7iQGTt337V7-IomFKgcWIr-Zf0saCFk0xyQjb0foQ=w1273-h955-s-no">
+            <h3>Bridge</h3>
+        </div>
+        <div>
+            <img class="image"
+                src="https://lh3.googleusercontent.com/pw/ADCreHeMHhftTwdJfDNQcyrhF1Yrx4dsiRqvUFuU2875DzCssx0Fl-lGU6rkRwGVBc_UheFJCpD1V07Bcoy5JK3ipGXlU4VJdM7OViKsuf6pKuzemSs0qBi-bpwkAuEaM5o-olft-cVkP5hAzIoqKxyIjg=w1273-h955-s-no">
+            <h3>Tree</h3>
+        </div>
+        <div>
+            <img class="image"
+                src="https://lh3.googleusercontent.com/pw/ADCreHdBMWugQniy-ya1hyzj6o23NrExd_0hTMvdthHmR6WlGF2OiR8kyxTmrMcvTAXQPR7HeQacRdGNQ0GUiADKifvqmG5ZouTOKc91F1eObWstWOV84BdAXaJ3vsZNJCgasl3IBHOSGBZVY2Qkaii3Ug=w1273-h955-s-no">
+            <h3>Carnival</h3>
+        </div>
+        <div>
+            <img class="image"
+                src="https://lh3.googleusercontent.com/pw/ADCreHdofuvjuendBTpl47uxkcEdRf7ENJ6LFJWh0_p5psc_e1QUDatrvGfep9elVrOe-L4UJedBPyEeJgT3Ep3qIC4P7FcPXa6e6gKiwm9COiUApNNRDUGff0n5D1p0xP1xfw1Xc0qtE6OND-wHjsoxKw=w1273-h955-s-no">
+            <h3>Coaster</h3>
+        </div>
+        <div>
+            <img class="image"
+                src="https://lh3.googleusercontent.com/pw/ADCreHeSYW9-Md5mtuqc1EZFKvOZXHec9vlL4AGfOVydMCzKcxSkl-7SCc2Rnrn3Kggkfbgbmq2P78i5CLViXF2i1ZdSWZry8bU1L8pDVyfsnk6BHaXFfmup4lg5A0fE4va8-U1NY2SqjJvwXvVjqxTPkg=w1273-h955-s-no">
+            <h3>Sunrise</h3>
+        </div>
+        <div>
+            <img class="image"
+                src="https://lh3.googleusercontent.com/pw/ADCreHcV9qWjw4ZWl0nGk4GquQrJ5Rqv20BW1uoIHSOu2Brj_N9DEiTUuzi1S4AvJR_rW5a7WvoQ7O6OY5eVafGR50sNwFnCD0G987GuW6teW6vKj9MpBg--OlmQbjzoFJO58uTy5NAKv6FBcw-9yMJWFsuOeQ=w1273-h955-s-no">
+            <h3>Forest</h3>
+        </div>
+    </div>
+
+    <script>
+        const openImage = (e) => {
+            const container = document.createElement("div");
+            container.classList.add("popup");
+            document.body.appendChild(container);
+            const img = e.target;
+            const newImg = document.createElement("img");
+            newImg.classList.add("popup-img");
+            newImg.src = img.src;
+            container.appendChild(newImg);
+            const center = document.createElement("center");
+            container.appendChild(center);
+            const title = document.createElement("h3");
+            title.classList.add("popup-title");
+            title.innerText = img.nextElementSibling.innerText;
+            center.appendChild(title);
+            container.addEventListener("click", () => {
+                container.remove();
+            });
+        };
+        let images = document.getElementsByTagName("img");
+        for (var i = 0; i < images.length; i++) {
+            images[i].addEventListener("click", openImage);
+        }
+    </script>
+
+</body>
+
+</html>
